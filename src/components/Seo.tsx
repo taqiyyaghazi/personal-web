@@ -1,14 +1,12 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-// !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'Taqiyya Ghazi | Software Engineer',
+  siteName: 'Taqiyya Ghazi | Software Engineer',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+    'A personal website of a software engineer that presents various articles on programming, application development, and the latest technology. Dont miss out on the useful information available here.',
+  url: 'https://taqiyyaghazi.com',
   type: 'website',
   robots: 'follow, index',
   /**
@@ -58,8 +56,7 @@ export default function Seo(props: SeoProps) {
       <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
-      {/* // !STARTERCONF Remove or change to your handle */}
-      {/* <meta name='twitter:site' content='@th_clarence' /> */}
+      <meta name='twitter:site' content='@zitaqiy' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
@@ -71,11 +68,10 @@ export default function Seo(props: SeoProps) {
             property='og:publish_date'
             content={meta.date}
           />
-          {/* // !STARTERCONF Remove or change to your name */}
           <meta
             name='author'
             property='article:author'
-            content='Theodorus Clarence'
+            content='Ghazi Taqiyya Al Anshari'
           />
         </>
       )}
@@ -91,8 +87,6 @@ export default function Seo(props: SeoProps) {
   );
 }
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-// ! then replace the whole /public/favicon folder and favicon.ico
 const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
   {
     rel: 'apple-touch-icon',
